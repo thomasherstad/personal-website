@@ -1,8 +1,7 @@
 FROM debian:stable-slim
 
 COPY personal-website /bin/personal-website
-
-#COPY /templates /templates
+COPY /templates /templates
 
 ENV PORT=8080
 
