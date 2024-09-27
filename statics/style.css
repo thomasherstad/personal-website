@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+:root {
+    --bg-color: #1F1F1F;
+    --light-color: #F2F2F2;
+    --darker-light: #CBCBCB;
+    --accent-normal: #06C9F9;
+    --accent-brighter: #38D4FA; 
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: Lexend;
+}
+
+.navbar {
+    background-color: var(--bg-color);
+    padding: 0.75rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: --light-color;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo, .nav-container {
+    margin: 0 4rem 0 4rem;
+}
+
+.nav-container {
+    display: flex;
+    gap: 4rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--light-color)
+}
+
+a:hover {
+    color: var(--accent-normal);
+}
+
+#dot-logo {
+    color: var(--accent-normal)
+}
+
+.hero-section {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img, .hero-text{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.hero-img {
+    width: 400px;
+    height: 300px;
+    background-color: var(--bg-color);
+    border: solid var(--darker-light) 2px;
+    border-radius: 20px;
+}
+
+h1 {
+    font-size: 2.25rem;
+}
+
+#name {
+    color: var(--light-color)
+}
+
+#profession {
+    color: var(--accent-normal)
+}
+
+.button {
+    background-color: var(--accent-normal);
+    color: var(--bg-color);
+    font-family: inherit;
+    border: none;
+    font-size: 1.25rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.button:hover {
+    background-color: var(--accent-brighter);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.button:active {
+    background-color: var(--accent-normal);
+    transition: 0.2s;
+}
