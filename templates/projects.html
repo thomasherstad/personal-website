@@ -4,9 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
+    <link rel="stylesheet" href="../statics/style.css">
 </head>
 <body>
-    <h1>Hello, Projects!</h1> 
-    <a href="/index.html">Home</a>
+    <nav>
+        <div class="navbar">
+            <div class="nav-logo">
+                <a class="nav-links" href="./index.html"><span>Thomas</span><span id="dot-logo">.</span></a>
+            </div>
+            <div class="nav-container">
+                <a class="nav-links" href="./projects.html">Projects</a>
+                <a class="nav-links" href="./about.html">About</a>
+                <a class="nav-links" href="./contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+    <div class="spacer-nav"></div>
+    <div class="project-section">
+        <div class="project-image" id="geoparty-image">
+            <img src="../assets/geoparty_game.png" height="250">
+        </div>
+        <div class="project-text">
+            <h2 class="project-heading">ChatGeoParTy</h2>
+            <a class="links" href="https://github.com/thomasherstad/geoparty">Github link</a>
+            <div class="project-description">
+                <p>Do you love playing quiz games with your friends but hate that one of you needs to be the host? Me too. That's why I built this webapp where an LLM takes the role of a quiz host. Freely choose whichever categories you want, split your group of friends into two teams and have at it!</p>
+                <p>The app is built with a Python Flask backend and HTML, CSS and vanilla JavaScript on the frontend. The backend is sending requests to the OpenAI completion api. The app is deployed in a Docker container on a Hetzner VPS using Caddy as a reverse proxy.</p>
+            </div>
+        </div>
+    </div>
+    <div class="project-section">
+        <div class="project-image">
+        </div>
+        <div class="project-text">
+            <h2 class="project-heading">German Noun Flashcard App</h2>
+            <a class="links" href="https://github.com/thomasherstad/geoparty">Github link</a>
+            <div class="project-description">
+                <p>If you've ever tried learning a language with gendered nouns, I am sure you felt a bit of existential dread as you read that title. I know, same here. Instead of just using the famous flashcard app Anki as any normal person, I wanted to get into the weeds of how a spaced-repetition app works and at the same time improve my German skills. A win - win situation!</p>
+                <p>This app is built in Python to work in the terminal, utilizing a simple csv file to save your progress to the disk. It implements the Anki algorithm as described by them here, where each Noun has metadata about when it should be shown to the user next time.</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

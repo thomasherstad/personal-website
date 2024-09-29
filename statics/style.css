@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
-
+/*@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+*/
 :root {
     --bg-color: #1F1F1F;
     --light-color: #F2F2F2;
@@ -17,11 +17,13 @@ body {
     background-color: var(--bg-color);
     padding: 0.75rem;
     font-size: 1.5rem;
-    text-decoration: none;
     color: --light-color;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .nav-logo, .nav-container {
@@ -38,12 +40,21 @@ a {
     color: var(--light-color)
 }
 
-a:hover {
+.nav-links{
+    color: var(--light-color)
+}
+
+.nav-links:hover {
     color: var(--accent-normal);
 }
 
-#dot-logo {
-    color: var(--accent-normal)
+#dot-logo, #dot-about, #dot-projects, #dot-contacts {
+    color: var(--accent-normal);
+    font-size:2rem;
+}
+
+.spacer-nav {
+    height: 4rem;
 }
 
 .hero-section {
@@ -97,4 +108,53 @@ h1 {
 .button:active {
     background-color: var(--accent-normal);
     transition: 0.2s;
+}
+
+.project-section {
+    margin-top: 6.25rem;
+    display: flex;
+    justify-content: center;
+}
+
+.project-image, .project-text {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.project-image {
+    width: 400px;
+    height: 300px;
+    background-color: var(--bg-color);
+    border: solid var(--darker-light) 0px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+#geoparty-image{
+    background-color: #3c6d79;
+}
+
+.project-text {
+    width: 30rem;
+}
+
+.links {
+    color: var(--accent-normal);
+    font-size: 1rem;
+    text-decoration: underline;
+}
+
+.project-heading {
+    margin: 0;
+    color: var(--light-color)
+}
+
+.project-description {
+    color: var(--darker-light);
+    font-size: 1rem;
+    line-height: 1.5rem;
 }
