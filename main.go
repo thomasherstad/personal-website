@@ -9,7 +9,6 @@ import (
 func main() {
 	mux := http.NewServeMux()
 
-	// const filePathRoot = "."
 	port := os.Getenv("PORT")
 
 	srv := &http.Server{
@@ -17,12 +16,18 @@ func main() {
 		Handler: mux,
 	}
 
-	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("static"))))
-
 	mux.HandleFunc("/", handlerHome)
 	mux.HandleFunc("/projects", handlerProjects)
 	mux.HandleFunc("/about", handlerAbout)
 	mux.HandleFunc("/contact", handlerContact)
+
+	// Serve static files from the static folder
+	statics := http.FileServer(http.Dir("./static"))
+	mux.Handle("/static/", http.StripPrefix("/static/", statics))
+
+	// Serve assets from the assets folder
+	assets := http.FileServer(http.Dir("./assets"))
+	mux.Handle("/assets/", http.StripPrefix("/assets/", assets))
 
 	log.Println("Personal website server running on port", port)
 	log.Fatal(srv.ListenAndServe())
