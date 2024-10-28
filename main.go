@@ -12,8 +12,8 @@ func main() {
 	port := os.Getenv("PORT")
 
 	srv := &http.Server{
-		Addr:    ":" + port,
-		Handler: mux,
+		Addr:              ":" + port,
+		Handler:           mux,
 		ReadHeaderTimeout: 30,
 	}
 
