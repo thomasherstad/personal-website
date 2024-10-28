@@ -4,6 +4,7 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"time"
 )
 
 func main() {
@@ -14,7 +15,7 @@ func main() {
 	srv := &http.Server{
 		Addr:              ":" + port,
 		Handler:           mux,
-		ReadHeaderTimeout: 30,
+		ReadHeaderTimeout: 2 * time.Second,
 	}
 
 	mux.HandleFunc("/", handlerHome)
