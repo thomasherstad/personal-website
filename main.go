@@ -14,6 +14,7 @@ func main() {
 	srv := &http.Server{
 		Addr:    ":" + port,
 		Handler: mux,
+		ReadHeaderTimeout: 30,
 	}
 
 	mux.HandleFunc("/", handlerHome)
