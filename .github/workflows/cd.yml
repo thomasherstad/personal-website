@@ -63,6 +63,6 @@ jobs:
                 script: |
                   echo "hello_world"
                   docker pull theorm626/personal-website:latest
-                  docker stop personal-website
-                  docker rm personal-website
+                  docker stop personal-server
+                  docker rm personal-server
                   docker run -d --network=webapps --name personal-server -p 8080:8080 theorm626/personal-website:latest
