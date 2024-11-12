@@ -49,7 +49,7 @@ jobs:
               uses: docker/build-push-action@v6
               with:
                 push: true
-                tags: user/app:latest
+                tags: theorm626/personal-website:latest
 
             #ssh to server, pull image, stop container, start new container
             - name: executing remote ssh commands using private key
