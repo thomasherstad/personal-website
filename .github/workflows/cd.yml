@@ -24,6 +24,9 @@ jobs:
             
             - name: Build app
               run: . scripts/buildprod.sh
+            
+            - name: Check that app is built
+              run: echo ${PWD} && ls -lR
 
             #TODO: set up gcp instead of docker hub
               #Set up google cloud sdk
