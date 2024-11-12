@@ -48,6 +48,7 @@ jobs:
             - name: Build and push image
               uses: docker/build-push-action@v6
               with:
+                context: .
                 push: true
                 tags: theorm626/personal-website:latest
 
