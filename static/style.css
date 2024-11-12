@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
 
 :root {
-    /*--bg-color: #1F1F1F; */
-    --bg-color: blue;
+    --bg-color: #1F1F1F;
     --light-color: #F2F2F2;
     --darker-light: #CBCBCB;
     --accent-normal: #06C9F9;
