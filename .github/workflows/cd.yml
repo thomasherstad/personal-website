@@ -30,6 +30,14 @@ jobs:
             #Build and push docker image to gcloud
 
             #ssh to server
+            - name: executing remote ssh commands using private key
+              uses: appleboy/ssh-action@v1.1.0
+              with:
+                host: ${{ secrets.HOST }}
+                username: ${{ secrets.USERNAME }}
+                key: ${{ secrets.SSH_PRIVATE_KEY }}
+                port: ${{ secrets.PORT }}
+                script: whoami
 
             #pull new image
 
