@@ -4,18 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/static/style.css">
+    <link rel="stylesheet" type="text/css" href="/static/mediaqueries.css">
     <title>About</title>
     <link rel="icon" type="image/x-icon" href="/assets/favicon.svg">
 </head>
 <body>
-    <nav>
-        <div class="navbar">
+    <nav id="desktop-nav">
             <div class="nav-logo">
-                <a class="nav-links" href="/"><span>Thomas</span><span id="dot-logo">.</span></a>
+                <a class="nav-links" href="/">
+                    <div><span>Thomas</span><span id="dot-logo">.</span></div>
+                </a>
             </div>
             <div class="nav-container">
-                <a class="nav-links" href="/projects">Projects</a>
-                <a class="nav-links" href="/about">About</a>
+                <ul class="nav-links">
+                    <li><a href="/projects">Projects</a></li>
+                    <li><a href="/about">About</a></li>
+                </ul>
+            </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="nav-logo">
+            <a class="nav-links" href="/">
+                <div><span>Thomas</span><span id="dot-logo">.</span></div>
+            </a>
+        </div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="/projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="/About" onclick="toggleMenu()">About</a></li>
             </div>
         </div>
     </nav>
