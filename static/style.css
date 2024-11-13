@@ -139,13 +139,10 @@ a:hover {
     align-items: center;
     margin: 10vh 0;
     height: 60vh;
+    gap: 2rem;
 }
 
 
-.hero-img, .hero-text{
-    margin-left: 2rem;
-    margin-right: 2rem;
-}
 
 .hero-img {
     display: flex;
@@ -155,25 +152,34 @@ a:hover {
     height: 300px;
 }
 
+.hero-text {
+    display: flex;
+    flex-direction: column;
+
+}
+
 h1 {
     font-size: 2.25rem;
 }
 
 #name {
-    color: var(--light-color)
+    color: var(--light-color);
 }
 
 #profession {
-    color: var(--accent-normal)
+    color: var(--accent-normal);
+    margin: 0 0.5rem 1rem 0;
 }
 
 .button {
+    width: 150px;
     background-color: var(--accent-normal);
     color: var(--bg-color);
     font-family: inherit;
     border: none;
     font-size: 1.25rem;
     padding: 0.5rem 1.5rem;
+    margin: 0.5rem 0;
     border-radius: 0.5rem;
 }
 
@@ -186,6 +192,17 @@ h1 {
 .button:active {
     background-color: var(--accent-normal);
     transition: 0.2s;
+}
+
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+    padding: 0.5rem;
+}
+
+.social-links img:hover {
+    cursor: pointer;
 }
 
 .project-section {
