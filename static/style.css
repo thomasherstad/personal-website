@@ -203,6 +203,7 @@ h1 {
 
 .social-links img:hover {
     cursor: pointer;
+    width:35px;
 }
 
 .project-section {
@@ -229,7 +230,7 @@ h1 {
 }
 
 #geoparty-image{
-    background-color: #3c6d79;
+    background-color: #242424;
 }
 
 #flashcard-app-image {
