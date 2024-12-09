@@ -1,0 +1,2 @@
+## Personal Website
+This repo is for my personal website. The website is there to host some of my web projects and for me to get some practical experience with how to host. It is currently deployed on a VPS server in a Docker container and sits behind a reverse proxy which redirects traffic to the correct container.
